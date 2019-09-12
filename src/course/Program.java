@@ -36,7 +36,7 @@ public class Program {
 		
 		
 		System.out.println("Enter order data:");
-		System.out.print("Status: ");
+		System.out.print("Status (PENDING_PAYMENT, PROCESSING, SHIPPED or DELIVERED): ");
 		status = OrderStatus.valueOf(sc.nextLine());
 		System.out.print("How many items to this order? ");
 		int nOrders = sc.nextInt();		
@@ -44,7 +44,7 @@ public class Program {
 		
 		for (int i = 0; i < nOrders; i++) {
 			sc.nextLine();
-			System.out.println("Enter #" + i+1 + " item data:");
+			System.out.println("Enter #" + (i+1) + " item data:");
 			System.out.print("Product name: ");
 			String nameFor = sc.nextLine(); 
 			System.out.print("Product price: ");
